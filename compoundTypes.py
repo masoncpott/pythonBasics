@@ -32,3 +32,8 @@ countOfGrades = len(student_grades)
 print("count of grades", countOfGrades)
 avgGrades = sumOfGrades / countOfGrades
 print("average of student grades:", avgGrades)
+
+# Tuple
+# tuples are immutable
+# dir(tuple)
+exampleTuple = (1, 3, 4, 5, 6, 7, 8)
