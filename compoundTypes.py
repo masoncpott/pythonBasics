@@ -1,7 +1,7 @@
 # List
 # you can store multiple objects in a list
 
-student_grades = [9.1, 8.8, 7.5]
+monday_temps = [9.1, 8.8, 7.5]
 
 # using "range", you can create a list of numbers automatically
 # the first two arguments are the range (inclusive of the first and noninclusive of the last), a third parameter can be provided and it is the step.
@@ -14,9 +14,21 @@ dir(list) # will print all the methods and attributes you can do on a list. Also
 
 dir(__builtins__) # displays all built in functions
 
-sum_of_grades = sum(student_grades)
-count_of_grades = len(student_grades)
+sum_of_temps = sum(monday_temps)
+count_of_temps = len(monday_temps)
 
-average_of_grades = sum_of_grades / count_of_grades
+average_of_temps = sum_of_temps / count_of_temps
 
-print(average_of_grades)
+print(average_of_temps)
+
+# Dictionary (key:value pairs, similar to a JS object)
+# dir(dict)
+# help(dict.values) etc
+
+student_grades = {"Mary": 9.1, "Sam": 8.8, "John": 7.5}
+sumOfGrades = sum(student_grades.values())
+print("sum of grades:", sumOfGrades)
+countOfGrades = len(student_grades)
+print("count of grades", countOfGrades)
+avgGrades = sumOfGrades / countOfGrades
+print("average of student grades:", avgGrades)
