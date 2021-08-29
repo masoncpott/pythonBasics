@@ -32,3 +32,18 @@ def foo(string):
         return True
     else:
         return False
+
+#If temp is greater than 7, return "warm". Otherwise, return "cold".
+def warmOrCold(temp):
+    if temp > 7:
+        return "Warm"
+    else:
+        return "Cold"
+
+def whatIsTheTemp(temp):
+    if temp > 25:
+        return "Hot"
+    elif 25 >= temp >= 15:
+        return "Warm"
+    else:
+        return "Cold"
