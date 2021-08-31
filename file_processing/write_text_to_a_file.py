@@ -25,3 +25,12 @@ def foo(character, filepath = "bear.txt"):
     return content.count(character)
 
 print(foo('a', 'bear.txt')) # returns 39
+
+# Add lines to an existing file
+
+with open("veggies.txt", "+") as file:
+    file.write('\n Okra')
+    file.seek(0) #places the cursor are the start of the file
+    content = file.read()
+
+print(content)
